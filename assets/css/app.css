@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.carousel {
+  width: 70%;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.carousel .nav-button {
+  position: absolute;
+  top: calc(50% - 20px);
+  z-index: 666;
+  font-size: 30px;
+  color: #fff;
+  padding: 5px 10px;
+  line-height: normal;
+  background: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.carousel .prev {
+  left: 0;
+}
+.carousel .next {
+  right: 0;
+}
+.carousel .carousel-inner {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  border-color: red;
+  transition: transform 0.3s ease-in-out;
+}
+.carousel .carousel-inner .carousel-item {
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+}/*# sourceMappingURL=app.css.map */
